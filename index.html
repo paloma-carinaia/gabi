@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GABI es el asistente virtual inteligente de Carina IA: conversa contigo, responde tus preguntas y te ayuda al instante, 24/7. Producto en desarrollo." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>GABI · Asistente virtual inteligente de Carina IA</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GABI · Asistente virtual inteligente" />
+  <meta property="og:description" content="Un asistente virtual que conversa contigo y responde tus preguntas al instante, 24/7. Un producto en desarrollo de Carina IA." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236d5efc'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Decorative background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="GABI, inicio">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none">
+            <rect width="40" height="40" rx="11" fill="url(#g1)" />
+            <path d="M27.5 14.5c-1.9-1.9-4.5-3-7.5-3-5.8 0-10.5 4.4-10.5 10s4.7 10 10.5 10c2.6 0 5-.9 6.8-2.4" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+            <circle cx="20" cy="21.5" r="2.4" fill="#fff"/>
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7c6bff"/>
+                <stop offset="1" stop-color="#41d0c4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">GABI</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#features">Funciones</a>
+        <a href="#demo">Demo</a>
+        <a href="#how">Cómo funciona</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#demo" class="btn btn--ghost">Ver demo</a>
+        <a href="#contacto" class="btn btn--primary">Empezar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="pill">
+          <span class="pill-dot"></span>
+          En desarrollo · Impulsado por IA generativa
+        </span>
+        <h1>Tu asistente virtual inteligente, disponible <span class="grad-text">24/7</span>.</h1>
+        <p class="lead">
+          GABI conversa contigo en lenguaje natural, responde tus preguntas y te ayuda con
+          lo que necesites — al instante y en cualquier momento. Un asistente pensado para
+          adaptarse a ti.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn--primary btn--lg">Unirme a la lista de espera</a>
+          <a href="#demo" class="btn btn--ghost btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            Ver ejemplo
+          </a>
+        </div>
+        <ul class="hero-trust">
+          <li>✓ Conversación natural</li>
+          <li>✓ Disponible 24/7</li>
+          <li>✓ Español nativo</li>
+        </ul>
+
+        <a class="carina-badge" href="https://www.carina.chat/" target="_blank" rel="noopener" aria-label="Un producto de Carina IA (abre en una pestaña nueva)">
+          <span class="carina-badge-label">Un producto de</span>
+          <picture>
+            <img src="carinalogo.avif" alt="Carina IA" width="150" loading="eager" />
+          </picture>
+          <svg class="carina-badge-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Chat mockup -->
+      <div class="hero-visual">
+        <div class="chat-window" role="img" aria-label="Ejemplo de conversación con GABI">
+          <div class="chat-topbar">
+            <span class="chat-avatar">G</span>
+            <div class="chat-heading">
+              <strong>GABI</strong>
+              <span class="chat-status"><span class="status-dot"></span> En línea</span>
+            </div>
+            <span class="chat-dots">•••</span>
+          </div>
+          <div class="chat-body">
+            <div class="msg msg--in">¡Hola! 👋 Soy GABI, tu asistente. ¿En qué puedo ayudarte hoy?</div>
+            <div class="msg msg--out">Hola, ¿hacen envíos a todo el país?</div>
+            <div class="msg msg--in">¡Sí! Enviamos a todo el país 📦. Los pedidos de más de $50 tienen envío gratis y llegan en 2–4 días hábiles.</div>
+            <div class="msg msg--out">Perfecto. ¿Puedo pagar con transferencia?</div>
+            <div class="msg msg--in typing" aria-label="GABI está escribiendo">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="chat-input">
+            <input type="text" placeholder="Escribe un mensaje…" aria-label="Mensaje" disabled />
+            <button class="send-btn" aria-label="Enviar" disabled>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="visual-badge">
+          <strong>&lt; 2 s</strong>
+          <span>tiempo de respuesta</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="features container" id="features">
+      <header class="section-head">
+        <span class="eyebrow">Funciones</span>
+        <h2>Un asistente que te entiende de verdad</h2>
+        <p>GABI no es un chatbot con guiones rígidos. Entiende el lenguaje natural y responde con contexto, sea cual sea tu pregunta.</p>
+      </header>
+
+      <div class="feature-grid">
+        <article class="card">
+          <div class="card-icon">💬</div>
+          <h3>Respuestas naturales</h3>
+          <p>Conversa como una persona real, entiende el contexto y mantiene el hilo de la charla.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Disponible 24/7</h3>
+          <p>Está disponible de día y de noche, sin esperas ni horarios. Responde cuando lo necesites.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📚</div>
+          <h3>Aprende y se adapta</h3>
+          <p>Recuerda el contexto de la conversación y ajusta sus respuestas a lo que buscas.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Multilingüe</h3>
+          <p>Habla contigo en tu idioma y cambia de lengua dentro de la misma conversación.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🔒</div>
+          <h3>Privado y seguro</h3>
+          <p>Tus conversaciones están cifradas y tus datos nunca se usan para entrenar modelos de terceros.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✨</div>
+          <h3>Fácil de usar</h3>
+          <p>Solo escribe. Sin comandos ni configuraciones complicadas: preguntas y GABI responde.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Demo / big showcase ===== -->
+    <section class="demo container" id="demo">
+      <div class="demo-copy">
+        <span class="eyebrow">Ejemplo de uso</span>
+        <h2>Así conversa GABI</h2>
+        <p>Este es un ejemplo de cómo GABI puede ayudarte: entiende lo que preguntas, mantiene el contexto y te acompaña paso a paso dentro de la misma conversación.</p>
+        <ul class="check-list">
+          <li>Detecta la intención real detrás de cada pregunta</li>
+          <li>Mantiene el hilo y recuerda lo que ya le has dicho</li>
+          <li>Responde en segundos, en cualquier momento</li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary">Quiero probar GABI</a>
+      </div>
+
+      <div class="demo-chat">
+        <div class="chat-window chat-window--alt">
+          <div class="chat-topbar">
+            <span class="chat-avatar">G</span>
+            <div class="chat-heading">
+              <strong>GABI</strong>
+              <span class="chat-status"><span class="status-dot"></span> Respondiendo</span>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="msg msg--out">¿Tienen la cafetera roja en stock?</div>
+            <div class="msg msg--in">¡Sí! La cafetera Aroma en rojo está disponible ☕. Cuesta $89 y ahora tiene 15% de descuento.</div>
+            <div class="msg msg--out">Genial, ¿me la reservan?</div>
+            <div class="msg msg--in">Claro 😊 Te comparto el enlace para completar tu compra con el descuento ya aplicado 👉</div>
+            <div class="msg msg--card">
+              <div class="prod-thumb">☕</div>
+              <div>
+                <strong>Cafetera Aroma · Roja</strong>
+                <span class="prod-price"><s>$89</s> $75.65</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="how container" id="how">
+      <header class="section-head">
+        <span class="eyebrow">Cómo funciona</span>
+        <h2>Tan simple como conversar</h2>
+      </header>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>Pregunta lo que quieras</h3>
+          <p>Escríbele en lenguaje natural, como le hablarías a una persona. Sin comandos ni formatos.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>GABI entiende y responde</h3>
+          <p>Interpreta tu intención y te da una respuesta clara y con contexto en segundos.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>Sigue la conversación</h3>
+          <p>Repregunta, matiza o cambia de tema. GABI recuerda el hilo y se adapta a ti.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats container">
+      <div class="stat">
+        <strong class="grad-text">24/7</strong>
+        <span>siempre disponible</span>
+      </div>
+      <div class="stat">
+        <strong class="grad-text">+30</strong>
+        <span>idiomas soportados</span>
+      </div>
+      <div class="stat">
+        <strong class="grad-text">∞</strong>
+        <span>preguntas, sin límites</span>
+      </div>
+      <div class="stat">
+        <strong class="grad-text">0</strong>
+        <span>comandos que aprender</span>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-band" id="contacto">
+      <div class="container cta-inner">
+        <span class="pill pill--light">
+          <span class="pill-dot"></span>
+          Producto en desarrollo
+        </span>
+        <h2>GABI está en camino</h2>
+        <p>Estamos construyendo el asistente virtual de Carina IA. Únete a la lista de espera y sé de los primeros en probarlo.</p>
+        <a href="#" class="btn btn--light btn--lg">Unirme a la lista de espera</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-logo" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="30" height="30" fill="none">
+              <rect width="40" height="40" rx="11" fill="url(#g2)" />
+              <path d="M27.5 14.5c-1.9-1.9-4.5-3-7.5-3-5.8 0-10.5 4.4-10.5 10s4.7 10 10.5 10c2.6 0 5-.9 6.8-2.4" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+              <circle cx="20" cy="21.5" r="2.4" fill="#fff"/>
+              <defs>
+                <linearGradient id="g2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#7c6bff"/><stop offset="1" stop-color="#41d0c4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-name">GABI</span>
+        </div>
+        <p class="footer-tag">El asistente virtual inteligente. Un producto en desarrollo de Carina IA.</p>
+        <div class="powered">
+          <span>Un producto de Carina IA</span>
+          <picture>
+            <img src="carinalogo.avif" alt="Carina IA" class="carina-logo" width="160" loading="lazy" />
+          </picture>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <a href="#features">Funciones</a>
+          <a href="#demo">Demo</a>
+          <a href="#how">Cómo funciona</a>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <a href="#">Sobre Carina IA</a>
+          <a href="#">Blog</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Seguridad</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Carina IA. Todos los derechos reservados.</span>
+      <span>Hecho con 💜 por Carina IA.</span>
+    </div>
+  </footer>
+</body>
+</html>
